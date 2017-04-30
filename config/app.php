@@ -177,6 +177,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+      Krlove\EloquentModelGenerator\Provider\GeneratorServiceProvider::class,
+      Yajra\Oci8\Oci8ServiceProvider::class,
+
     ],
 
     /*

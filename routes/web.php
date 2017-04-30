@@ -12,5 +12,6 @@
 */
 
 Route::get('/', function () {
+    var_dump(DB::connection()->getDatabaseName());
     return view('welcome');
 });
