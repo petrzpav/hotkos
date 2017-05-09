@@ -22,7 +22,7 @@ class AuthController extends Controller {
 
   use AuthenticatesAndRegistersUsers, ThrottlesLogins;
 
-  protected $redirectTo = '/';
+  protected $redirectTo = '/zamestnanec';
 
   private $maxLoginAttempts = 3;
 
@@ -48,7 +48,8 @@ class AuthController extends Controller {
         'JMENO' => 'required|max:255',
         'PRIJMENI' => 'required|max:255',
         'ADRESA' => 'required|max:255',
-        'HESLO' => 'required|confirmed|min:6',
+        'email' => 'required|email|max:255|unique:zamestnanec',
+        'password' => 'required|confirmed|min:6',
       ]
     );
   }
@@ -65,7 +66,8 @@ class AuthController extends Controller {
         'JMENO' => $data['JMENO'],
         'PRIJMENI' => $data['PRIJMENI'],
         'ADRESA' => $data['ADRESA'],
-        'HESLO' => bcrypt($data['HESLO']),
+        'email' => $data['email'],
+        'password' => bcrypt($data['password']),
       ]
     );
   }

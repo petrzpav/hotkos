@@ -54,14 +54,10 @@ return [
 
         'mysql' => [
             'driver'    => 'mysql',
-            'host'      => env('DB_HOST', 'localhost'),
-            'database'  => env('DB_DATABASE', 'motivator'),
-            'username'  => env('DB_USERNAME', 'root'),
-            'password'  => env('DB_PASSWORD', ''),
-//            'host'      => env('DB_HOST', 'sql17.pipni.cz'),
-//            'database'  => env('DB_DATABASE', 'motivator_petrzela_eu'),
-//            'username'  => env('DB_USERNAME', 'motivator.petrzela.eu'),
-//            'password'  => env('DB_PASSWORD', 'HPL/MCc7'),
+            'host'      => env('DB_HOST', 'wm131.wedos.net'),
+            'database'  => env('DB_DATABASE', 'd144941_hotkos'),
+            'username'  => env('DB_USERNAME', 'a144941_hotkos'),
+            'password'  => env('DB_PASSWORD', 'PdWUPdMC'),
             'charset'   => 'utf8',
             'collation' => 'utf8_general_ci',
             'prefix'    => '',

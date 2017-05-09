@@ -39,7 +39,8 @@ class Zamestnanec extends Model implements AuthenticatableContract,
     'JMENO',
     'PRIJMENI',
     'ADRESA',
-    'HESLO',
+    'email',
+    'password',
     'ZAMESTNANEC_ID'
   ];
 

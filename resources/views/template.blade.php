@@ -27,7 +27,7 @@
         <li><a href="{{ action('Auth\AuthController@getLogin') }}">Přihlášení obsluhy</a></li>
         <li><a href="{{ action('Auth\AuthController@getRegister') }}">Registrace obsluhy</a></li>
         @else
-        <li>Přihlášený uživatel: {{ Auth::user()->name }} {{ Auth::user()->surname }} <a href="{{ action('Auth\AuthController@getLogout') }}">Odhlásit se</a></li>
+        <li>Přihlášený uživatel: {{ Auth::user()->JMENO }} {{ Auth::user()->PRIJMENI }} <a href="{{ action('Auth\AuthController@getLogout') }}">Odhlásit se</a></li>
         @endif
         </ul>
       &copy; 2017 Hotel Košice
