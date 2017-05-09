@@ -1,0 +1,83 @@
+/*basic*/
+
+* {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fcfdfe;
+}
+
+body {
+  margin: 0 2rem;
+}
+
+a.button {
+  max-width: 10rem;
+  background-color: black;
+  color: #fcfdfe;
+  text-decoration: none;
+  background-color: black;
+  display: block;
+  padding: 1rem 2rem 1rem 1rem;
+}
+
+
+/*header*/
+
+div.header {
+  background-color: black;
+  background-image: url("../img/header.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 20rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h1>a {
+  text-decoration: none;
+  color: black;
+}
+
+
+/*footer*/
+
+div.footer {
+  margin-top: 5rem;
+  padding-top: 1rem;
+  border-top: solid black 3px;
+  font-weight: bold;
+}
+
+
+/*form*/
+
+form {
+  margin: 2rem 0;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  display: inline-block;
+  margin: 0 1rem 1rem 0.5rem;
+  font-size: 1rem;
+  border: solid 1px black;
+  padding: 0.3rem 0.5rem;
+}
+
+input[type=submit] {
+  margin-top: 1rem;
+  display: block;
+  font-size: 1rem;
+  border: 0;
+  background-color: black;
+  color: #fcfdfe;
+  padding: 1rem 3rem 1rem 1rem;
+}
+
+input[type=submit]:hover {
+  cursor: pointer;
+}
