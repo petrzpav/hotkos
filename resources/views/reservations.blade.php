@@ -1,6 +1,6 @@
 @extends('template')
 
-@section('title', 'Hotel Košice')
+@section('title', 'Přehled rezervací - Hotel Košice')
 
 @section('content')
 

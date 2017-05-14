@@ -2,12 +2,10 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
-
 /**
  * Class Pokoj
  */
-class Pokoj extends Model {
+class Pokoj extends ValidationModel {
   public $timestamps = false;
 
   /**
@@ -40,7 +38,7 @@ class Pokoj extends Model {
   }
 
   public function rezervace () {
-    return $this->hasMany('App\Models\Rezervace');
+    return $this->hasMany('App\Models\Rezervace', 'REZERVACE_ID');
   }
 
 }

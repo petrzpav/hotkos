@@ -2,12 +2,10 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
-
 /**
  * Class Platba
  */
-class Platba extends Model
+class Platba extends ValidationModel
 {
 
     public $timestamps = false;

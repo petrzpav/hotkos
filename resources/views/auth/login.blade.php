@@ -1,6 +1,6 @@
 @extends('template')
 
-@section('title', 'Přihlášení - Motivátor')
+@section('title', 'Přihlášení - Hotel Hošice')
 
 @section('content')
 

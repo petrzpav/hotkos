@@ -54,15 +54,26 @@ return [
 
         'mysql' => [
             'driver'    => 'mysql',
-            'host'      => env('DB_HOST', 'wm131.wedos.net'),
-            'database'  => env('DB_DATABASE', 'd144941_hotkos'),
-            'username'  => env('DB_USERNAME', 'a144941_hotkos'),
-            'password'  => env('DB_PASSWORD', 'PdWUPdMC'),
+            'host'      => env('DB_HOST', 'localhost'),
+            'database'  => env('DB_DATABASE', 'hotkos'),
+            'username'  => env('DB_USERNAME', 'root'),
+            'password'  => env('DB_PASSWORD', ''),
             'charset'   => 'utf8',
             'collation' => 'utf8_general_ci',
             'prefix'    => '',
             'strict'    => false,
         ],
+        // 'mysql' => [
+        //     'driver'    => 'mysql',
+        //     'host'      => env('DB_HOST', 'wm131.wedos.net'),
+        //     'database'  => env('DB_DATABASE', 'd144941_hotkos'),
+        //     'username'  => env('DB_USERNAME', 'a144941_hotkos'),
+        //     'password'  => env('DB_PASSWORD', 'PdWUPdMC'),
+        //     'charset'   => 'utf8',
+        //     'collation' => 'utf8_general_ci',
+        //     'prefix'    => '',
+        //     'strict'    => false,
+        // ],
 
         'pgsql' => [
             'driver'   => 'pgsql',

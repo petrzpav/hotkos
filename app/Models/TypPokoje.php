@@ -2,12 +2,10 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
-
 /**
  * Class TypPokoje
  */
-class TypPokoje extends Model {
+class TypPokoje extends ValidationModel {
 
   public $timestamps = false;
 

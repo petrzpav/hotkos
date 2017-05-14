@@ -14,6 +14,8 @@
       <dd>{{ $room->ZAKLADNI_CENA + $room->typPokoje->CENA  }}</dd>
       <dt>Kapacita</dt>
       <dd>{{ $room->typPokoje->KAPACITA }}</dd>
+      <dt><a href="{{ action('PageViewController@getCreateReservation', [ 'roomid' => $room->POKOJ_ID ]) }}">Rezervovat
+          pokoj</a></dt>
     </dl>
   @endforeach
 

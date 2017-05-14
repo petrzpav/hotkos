@@ -2,12 +2,10 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
-
 /**
  * Class Host
  */
-class Host extends Model
+class Host extends ValidationModel
 {
   public $timestamps = false;
   /**
@@ -32,7 +30,12 @@ class Host extends Model
     'ADRESA'
   ];
 
-  protected $guarded = [];
+  protected static $rules = [
+    "JMENO" => "required",
+    "PRIJMENI" => "required",
+    "ADRESA" => "required",
+  ];
 
+  protected $guarded = [];
 
 }
