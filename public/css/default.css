@@ -9,29 +9,16 @@ body {
   margin: 0 2rem;
 }
 
-a.button {
-  max-width: 10rem;
-  background-color: black;
-  color: #fcfdfe;
-  text-decoration: none;
-  background-color: black;
-  display: block;
-  padding: 1rem 2rem 1rem 1rem;
+.footer li {
+  list-style-type: none;
 }
 
 
 /*header*/
 
-div.header {
-  background-color: black;
-  background-image: url("../img/header.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 20rem;
-}
-
 h1 {
   font-size: 4rem;
+  border-bottom: black solid;
 }
 
 h1>a {
@@ -43,7 +30,7 @@ h1>a {
 /*footer*/
 
 div.footer {
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
   padding-top: 1rem;
   border-top: solid black 3px;
   font-weight: bold;
@@ -80,4 +67,48 @@ input[type=submit] {
 
 input[type=submit]:hover {
   cursor: pointer;
+}
+
+
+/*rooms*/
+
+dl {
+  float: left;
+  border: solid black;
+  margin: 2rem;
+  padding: 2rem;
+}
+
+dl:last-of-type {
+  clear: right;
+}
+
+dt {
+  margin: 1rem 0;
+}
+
+dd {
+  margin: 0;
+  font-weight: bolder;
+}
+
+
+/*buttons*/
+
+li a, dt a {
+  max-width: 10rem;
+  background-color: black;
+  color: #fcfdfe;
+  text-decoration: none;
+  background-color: black;
+  display: block;
+  padding: 1rem 2rem 1rem 1rem;
+  margin: 1rem;
+}
+
+
+/*footer*/
+
+.footer {
+  clear: both
 }
