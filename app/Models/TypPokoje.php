@@ -27,6 +27,9 @@ class TypPokoje extends ValidationModel {
 
   protected $guarded = [];
 
+  /**
+   * @return \Illuminate\Database\Eloquent\Relations\HasMany
+   */
   public function pokoj () {
     return $this->hasMany('App\Model\Pokoj');
   }

@@ -38,6 +38,7 @@ class PageViewController extends Controller {
   }
 
   /**
+   * Vytvoření nového hosta a nové rezervace
    * @param Request $r
    * @param int $roomid
    * @return $this|\Illuminate\Http\RedirectResponse

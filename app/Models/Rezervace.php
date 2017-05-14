@@ -36,12 +36,23 @@ class Rezervace extends ValidationModel {
 
   protected $guarded = [];
 
+  /**
+   * @return \Illuminate\Database\Eloquent\Relations\HasMany
+   */
   public function karta () {
     return $this->hasMany('App\Models\Karta', 'KARTA_ID');
   }
+
+  /**
+   * @return \Illuminate\Database\Eloquent\Relations\HasOne
+   */
   public function host () {
     return $this->hasOne('App\Models\Host', 'HOST_ID');
   }
+
+  /**
+   * @return \Illuminate\Database\Eloquent\Relations\HasOne
+   */
   public function pokoj () {
     return $this->hasOne('App\Models\Pokoj', 'POKOJ_ID');
   }

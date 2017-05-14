@@ -33,10 +33,16 @@ class Pokoj extends ValidationModel {
 
   protected $guarded = [];
 
+  /**
+   * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+   */
   public function typPokoje () {
     return $this->belongsTo('App\Models\TypPokoje', 'TYP_POKOJE_ID');
   }
 
+  /**
+   * @return \Illuminate\Database\Eloquent\Relations\HasMany
+   */
   public function rezervace () {
     return $this->hasMany('App\Models\Rezervace', 'REZERVACE_ID');
   }

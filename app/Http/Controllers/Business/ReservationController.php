@@ -20,6 +20,7 @@ class ReservationController extends Controller {
   const STATE_PAID = 'paid';
 
   /**
+   * Vytvoření a validace rezervace-
    * @param $roomid
    * @param $jmeno
    * @param $prijemni
